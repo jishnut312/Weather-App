@@ -45,22 +45,30 @@
   cursor: not-allowed;
 }
 
-.geolocation-button {
-  width: 50px;        /* same height as input */
-  height: 50px;
-  background-color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 28px;
+.geolocation-btn {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;                /* makes it circular */
+  backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s;
+  border: 1px solid black;           /* ✅ border added */
+  cursor: pointer;
 }
 
-.geolocation-button:hover {
-  background-color: #e0e0e0;
+.geolocation-btn:hover {
+  border-color: #4285f4; 
+}
+.geolocation-btn i:hover {
+  color: black;            /* optional hover effect */
+
+}
+
+.geolocation-btn i {
+  font-size: 1.5rem;                  /* icon size */
+  color: #4285f4;                        /* icon color */
 }
 
 

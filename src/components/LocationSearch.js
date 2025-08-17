@@ -28,14 +28,14 @@ const LocationSearch = ({
           Search
         </button>
       </div>
-      <button 
-        onClick={fetchByGeolocation}
-        className="geolocation-button"
-        aria-label="Use current location"
-        title="Use my current location"
-      >
-        <span role="img" aria-hidden="true" className='location'><i className="bi bi-geo-alt-fill text-dark"></i> </span>
-      </button>
+      <button
+      onClick={fetchByGeolocation}
+      className="geolocation-btn"
+      aria-label="Use current location"
+      title="Use my current location"
+    >
+      <i className="bi bi-geo-alt-fill"></i>
+    </button>
     </div>
   );
 };
