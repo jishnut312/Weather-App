@@ -1,0 +1,89 @@
+.search-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.search-input-group {
+  display: flex;
+  flex-grow: 1;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #4285f4;
+}
+
+.search-button {
+  padding: 0 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #3367d6;
+}
+
+.search-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.geolocation-button {
+  width: 50px;        /* same height as input */
+  height: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.geolocation-button:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* Dark mode support */
+.dark-mode .search-input {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .search-button {
+  background-color: #555;
+}
+
+.dark-mode .search-button:hover {
+  background-color: #666;
+}
+
+.dark-mode .geolocation-button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .geolocation-button:hover {
+  background-color: #555;
+}
