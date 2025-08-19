@@ -86,6 +86,9 @@ function App() {
       case 'clouds':
         bgClass = 'cloudy-bg';
         break;
+      case 'clouds':
+        bgClass = 'cloudy-bg';
+        break;
       case 'rain':
         bgClass= 'lightrain-bg';
         break;
